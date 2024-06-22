@@ -12,7 +12,7 @@ import os
 server = Flask(__name__)
 
 # Load data
-data = pd.read_csv("Dashboard App/Data/Uk-Train Data.csv")
+data = pd.read_csv("Data/Uk-Train Data.csv")
 
 # Create a Dash app
 app = dash.Dash(__name__, server=server, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
