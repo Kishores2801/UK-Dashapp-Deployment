@@ -6,7 +6,7 @@ import plotly.express as px
 import folium
 
 
-data = pd.read_csv("D:/My Learning/My Projects/Project UK Railways/Dashboard App/Data/Uk-Train Data.csv")
+data = pd.read_csv("Data/Uk-Train Data.csv")
 
 hour_labels = {
     0: "12 AM", 1: "1 AM", 2: "2 AM", 3: "3 AM", 4: "4 AM",
