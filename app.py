@@ -12,7 +12,7 @@ import os
 server = Flask(__name__)
 
 # Load data
-data = pd.read_csv("D:/My Learning/My Projects/Project UK Railways/Dashboard App/Data/Uk-Train Data.csv")
+data = pd.read_csv("https://github.com/Kishores2801/UK-Dashapp-Deployment/blob/main/Data/Uk-Train%20Data.csv")
 
 # Create a Dash app
 app = dash.Dash(__name__, server=server, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
@@ -78,7 +78,7 @@ def set_arrival_options(dep_location):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=8050)
+    app.run_server()
 
 
 
